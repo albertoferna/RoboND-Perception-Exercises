@@ -61,7 +61,7 @@ def compute_normal_histograms(normal_cloud):
         norm_z_vals.append(norm_component[2])
 
     # TODO: Compute histograms of normal values (just like with color)
-    n_bins = 20 # here lower works better.
+    n_bins = 32 # back to 32 for the projecr
     norm_x_h = np.histogram(norm_x_vals, bins=n_bins, range=(0, 256))
     norm_y_h = np.histogram(norm_y_vals, bins=n_bins, range=(0, 256))
     norm_z_h = np.histogram(norm_x_vals, bins=n_bins, range=(0, 256))
